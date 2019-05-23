@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-///程序入口 继续扩展之前的功能 做一个列表+交互
+///程序入口 继续扩展之前的功能 做一个列表+收藏和取消收藏功能
 void main() => runApp(new MyApp());
 
 ///主体框架
@@ -41,12 +41,29 @@ class RandomWordsState extends State<RandomWords> {
         });
   }
 
-  Widget _buildRow(WordPair wordPair) {//创建单条数据
+  Widget _buildRow(WordPair wordPair) {
+    //创建单条数据
+    final alreadySaved = _saved.contains(wordPair); //判断单词是否已经添加
+
     return new ListTile(
       title: new Text(
         wordPair.asPascalCase,
         style: _biggerFont,
       ),
+      trailing: new Icon(
+          //添加收藏图标控件
+          alreadySaved ? Icons.favorite : Icons.favorite_border,
+          color: alreadySaved ? Colors.red : null
+      ),
+      onTap: (){//点击事件
+        setState(() {//更新控件状态
+          if (alreadySaved){
+            _saved.remove(wordPair);
+          }else {
+            _saved.add(wordPair);
+          }
+        });
+      },
     );
   }
 
@@ -59,6 +76,4 @@ class RandomWordsState extends State<RandomWords> {
       body: _buildSuggestions(),
     );
   }
-
-
 }

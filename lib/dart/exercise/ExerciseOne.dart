@@ -12,9 +12,10 @@ void test3() {
   var p2 = new Point(5,6);
   print(p.toString());
   print(p2.toString());
+  p.test();
 }
 
-class Point {
+class Point with Minxin{
   num x;
   num y;
 
@@ -25,6 +26,12 @@ class Point {
   Point.alongXAxis(num x) : this(x, 0);
 
   toString()=> "x = $x , y = $y";
+}
+
+class Minxin {
+  void test(){
+    print("Print from Minxin Class!");
+  }
 }
 
 

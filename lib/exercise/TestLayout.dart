@@ -75,9 +75,15 @@ class BottomBar extends StatelessWidget {
       decoration: new BoxDecoration(color: Colors.blue[500]),
       child: new Row(
         children: <Widget>[
-          new IconButton(icon: new Icon(Icons.access_alarm), onPressed: null),
-          new Expanded(child: new Text("")),
-          new IconButton(icon: new Icon(Icons.update), onPressed: null)
+          new IconButton(icon: new Icon(Icons.update), onPressed: null),
+          new Expanded(child: new Text(""), flex: 1,),//通过flex均分剩余空间
+          new IconButton(icon: new Icon(Icons.title), onPressed: null),
+          new Expanded(child: new Text(""),flex: 1,),
+          new IconButton(icon: new Icon(Icons.print), onPressed: null),
+          new Expanded(child: new Text(""),flex: 1,),
+          new IconButton(icon: new Icon(Icons.style), onPressed: null),
+          new Expanded(child: new Text(""),flex: 1,),
+          new IconButton(icon: new Icon(Icons.transform), onPressed: null),
         ],
       ),
     );

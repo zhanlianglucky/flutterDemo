@@ -6,8 +6,8 @@ void main() => runApp(new MaterialApp(
   home: new ListViewWidget(
 
     products:<Product>[//生成列表数据
-      new Product(goodsName: "shooes",isSelected: false),
-      new Product(goodsName: "Tshirt",isSelected: false),
+      new Product(goodsName: "shoes",isSelected: false),
+      new Product(goodsName: "T shirt",isSelected: false),
       new Product(goodsName: "coat",isSelected: false),
     ],
   ),

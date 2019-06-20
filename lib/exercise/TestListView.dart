@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(new MaterialApp(
   title: "test list",
   home: new ListViewWidget(
-
     products:<Product>[//生成列表数据
       new Product(goodsName: "shoes",isSelected: false),
       new Product(goodsName: "T shirt",isSelected: false),
@@ -33,6 +32,18 @@ class ListViewState extends State<ListViewWidget>{
     setState(() {//一定要加上更新数据的函数，否则不生效
       product.isSelected = !product.isSelected;
     });
+  }
+
+  @override
+  void initState() {//类似Android onCreate()
+    super.initState();
+    print("initState()");
+  }
+
+  @override
+  void dispose() {//类似Android onDestroy()
+    super.dispose();
+    print("dispose()");
   }
 
   @override

@@ -21,8 +21,16 @@ class GridViewWidget extends StatelessWidget{
       crossAxisCount: 2,//2列
       children: new List.generate(
           100, (index){
-        return new Center(
-          child: new Text("content $index"),
+        return new Container(
+          margin: new EdgeInsets.all(10),
+          decoration: new BoxDecoration(//背景
+            color: Colors.blue[100],
+            borderRadius: new BorderRadius.circular(5),
+            border: new Border.all(color: Colors.red),
+          ),
+          child: new Center(//内容
+            child: new Text("item $index"),
+          ),
         );
       }),
     );

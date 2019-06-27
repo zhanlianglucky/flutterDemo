@@ -42,7 +42,7 @@ class ContentState extends State<ContentWidget> {
   WeatherInfo weatherInfo;
   _getDataFromNet() async {
     String url = "http://www.weather.com.cn/data/cityinfo/101010100.html";
-    var res = await http.get(url);
+    var res = await http.get(url,headers: {"":""});//添加头信息
     setState(() {
       data = utf8.decode(res.body.codeUnits);
       var js = json.decode(data);

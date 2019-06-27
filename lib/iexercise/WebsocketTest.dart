@@ -15,7 +15,7 @@ void main()=> runApp(new MaterialApp(
 ));
 
 class ContentWidget extends StatefulWidget {
-  WebSocketChannel channel;
+  final WebSocketChannel channel;
   ContentWidget({this.channel});
   @override
   State<StatefulWidget> createState() => new ContentState();

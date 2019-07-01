@@ -8,7 +8,7 @@ void main() => runApp(new MaterialApp(
           title: new Text("listview"),
         ),
         body: new ContentWidget(
-          listData: new List<String>.generate(1000, (i) => "item $i"),//创建数据
+          listData: new List<String>.generate(3, (i) => "item $i"),//创建数据
         ),
       ),
     ));

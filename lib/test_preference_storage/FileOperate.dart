@@ -19,7 +19,8 @@ class FileOperate {
       File file = await _openLocalFile();
       return await file.readAsString();
     }on FileSystemException catch(e){
-      return "${e.message}";
+      print("${e.message}");
+      return "-1";
     }
   }
 

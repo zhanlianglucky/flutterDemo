@@ -3,6 +3,8 @@ import 'dart:convert';//字符集格式转换
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;//网络依赖
 
+import 'HttpConfig.dart';
+
 ///网络+json数据解析   新增http依赖库 参考地址：https://pub.dev/packages/http#-readme-tab-
 void main() => runApp(new MaterialApp(
   title: "test net",
@@ -41,7 +43,7 @@ class ContentState extends State<ContentWidget> {
   String data = "content";
   WeatherInfo weatherInfo;
   _getDataFromNet() async {
-    String url = "http://www.weather.com.cn/data/cityinfo/101010100.html";
+    String url = HttpConfig.cityWeatherUrl;
     var res = await http.get(url,headers: {"":""});//添加头信息
     setState(() {
       data = utf8.decode(res.body.codeUnits);

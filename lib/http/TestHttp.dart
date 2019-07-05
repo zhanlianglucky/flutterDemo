@@ -48,12 +48,14 @@ class ContentState extends State<ContentWidget> {
             Text(
               weather,
               style: TextStyle(
-              color: Colors.white,
+                color: Colors.white,
                 fontSize: 16.0,
-                wordSpacing: 8,//对汉字无效
+                wordSpacing: 8, //对汉字无效
                 letterSpacing: 4,
-            ),),
-            Padding( //插入padding控件
+              ),
+            ),
+            Padding(
+              //插入padding控件
               padding: EdgeInsets.fromLTRB(0, 0, 0, 10.0),
             ),
             RaisedButton(

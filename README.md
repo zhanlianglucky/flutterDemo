@@ -16,5 +16,5 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.  
 
 > 1.快速更新控件快捷键 Alt + Enter  
-> 2.实时模板，常用的代码块封装快捷输出模式：Settings > Editor > Live Templates 中自定义模板。
+> 2.实时模板，常用的代码块封装快捷输出模式：Settings > Editor > Live Templates 中自定义模板。   
 > 3. ...

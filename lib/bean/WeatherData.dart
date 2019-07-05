@@ -1,7 +1,7 @@
-import 'package:flutter_demo/parse_json/bean/WeatherInfo.dart';
+import 'package:flutter_demo/bean/WeatherInfo.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'package:flutter_demo/parse_json/bean/WeatherData.g.dart';
+part 'package:flutter_demo/bean/WeatherData.g.dart';
 
 @JsonSerializable(nullable: false)
 class WeatherData{

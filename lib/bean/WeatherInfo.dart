@@ -7,7 +7,7 @@ import 'package:json_annotation/json_annotation.dart';
     只需启动一次观察器，然后并让它在后台运行，这是安全的。
  * **/
 
-part 'package:flutter_demo/parse_json/bean/WeatherInfo.g.dart';// WeatherInfo为文件名称 将在我们运行生成命令后自动生成 ,此处报错很正常！
+part 'package:flutter_demo/bean/WeatherInfo.g.dart';// WeatherInfo为文件名称 将在我们运行生成命令后自动生成 ,此处报错很正常！
 
 @JsonSerializable(nullable: false) //这个标注是告诉生成器，这个类是需要生成Model类的
 

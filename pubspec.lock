@@ -303,6 +303,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.9.6+3"
+  nima:
+    dependency: "direct main"
+    description:
+      name: nima
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.3"
   package_config:
     dependency: transitive
     description:

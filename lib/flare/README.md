@@ -16,8 +16,9 @@ dependencies:
 
 * 在类中导入nima依赖包  
 
-    
+```
     import 'package:nima/nima_actor.dart';  
+```
 
 * 代码调用：
 

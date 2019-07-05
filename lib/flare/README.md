@@ -1,6 +1,6 @@
 # Flutter 运行flare设计的动画文件  
 
-* 利用flare工具设计动画
+* 利用flare工具设计动画  
    参考地址:<https://www.2dimensions.com/>  
    
 * 将flare生成的以 .nima 结尾的文件导入项目assets目录下  

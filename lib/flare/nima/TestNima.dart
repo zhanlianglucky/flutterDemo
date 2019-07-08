@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nima/nima_actor.dart';
 
-/// 初级的播放动画文件
+/// 初级的播放动画文件 nima动画
 void main() => runApp(MaterialApp(
       title: "flare first",
       home: Scaffold(
@@ -23,7 +23,7 @@ class ContentState extends State<ContentWidget> {
   Widget build(BuildContext context) {
     return Center(
       child: NimaActor(
-        "assets/nm/robot.nima",
+        "assets/nima/robot.nima",
         fit: BoxFit.contain,
         animation: "Flight",
       ),

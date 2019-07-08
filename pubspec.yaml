@@ -32,6 +32,7 @@ dependencies:
   ##    dio: ^2.1.1
   http: ^0.11.3+14
   nima: ^1.0.0
+  flare_flutter: ^1.5.0
 
   web_socket_channel: ^1.0.13
   cached_network_image: ^0.4.1+1
@@ -65,6 +66,7 @@ flutter:
     - assets/nima/robot.nima
     - assets/nima/robot.png
     - assets/nima/flutter.png
+    - assets/flare/lightButton.flr
 
   # To add assets to your application, add an assets section, like this:
   # assets:

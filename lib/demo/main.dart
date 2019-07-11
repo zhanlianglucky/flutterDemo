@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/demo/SplashWiget.dart';
 import 'package:flutter_demo/demo/home/HomePageWidget.dart';
-import 'package:flutter_demo/demo/home/SplashWiget.dart';
 
 /// 入口
 void main() => runApp(AppWidget());

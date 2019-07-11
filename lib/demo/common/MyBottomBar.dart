@@ -19,7 +19,7 @@ class MyBottomBarContainer {
           icon: Icon(Icons.shopping_cart),
         ),
         BottomNavigationBarItem(
-          title: Text("聊天"),
+          title: Text("消息"),
           icon: Icon(Icons.message),
         ),
         BottomNavigationBarItem(

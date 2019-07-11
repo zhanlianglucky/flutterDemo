@@ -9,7 +9,7 @@ class HomePageWidget extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePageWidget> {
-  var _currentIndex = 0;
+  var _currentPageIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,10 @@ class HomePageState extends State<HomePageWidget> {
       body: Center(
         child: Text("home"),
       ),
-      bottomNavigationBar:
-          MyBottomBarContainer().getBottomNavigationBar(_currentIndex, (i, b) {
+      bottomNavigationBar: MyBottomBarContainer()
+          .getBottomNavigationBar(_currentPageIndex, (i, b) {
         setState(() {
-          _currentIndex = i;
+          _currentPageIndex = i;
         });
       }),
     );

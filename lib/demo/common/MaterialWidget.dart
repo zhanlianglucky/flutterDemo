@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 class MaterialWidget extends StatelessWidget {
   final Widget body;
   final String title;
-  MaterialWidget({@required this.title,@required this.body});
+  final BottomNavigationBar bottomNavigationBar;
+  MaterialWidget({@required this.title,@required this.body,this.bottomNavigationBar});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,6 +16,7 @@ class MaterialWidget extends StatelessWidget {
           backgroundColor: Colors.lightBlueAccent,
         ),
         body: body,
+        bottomNavigationBar: bottomNavigationBar,
       ),
     );
   }

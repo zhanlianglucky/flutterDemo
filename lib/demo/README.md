@@ -1,4 +1,4 @@
-# This is a demo for excise flutter!
+# This's a flutter demo!
 
 ## This demo shows you how to use flutter to create a real project!
 

@@ -1,29 +1,36 @@
 import 'package:flutter/material.dart';
 
 class MyBottomBarContainer {
+  static List<String> tabInfoList = [
+    "首页",
+    "分类",
+    "购物车",
+    "消息",
+    "我的",
+  ];
 
   ///调用函数
   getBottomNavigationBar(int currentIndex,DataColumnSortCallback callback) {
     return BottomNavigationBar(
       items: [
         BottomNavigationBarItem(
-          title: Text("首页"),
+          title: Text(tabInfoList[0]),
           icon: Icon(Icons.home),
         ),
         BottomNavigationBarItem(
-          title: Text("分类"),
+          title: Text(tabInfoList[1]),
           icon: Icon(Icons.menu),
         ),
         BottomNavigationBarItem(
-          title: Text("购物车"),
+          title: Text(tabInfoList[2]),
           icon: Icon(Icons.shopping_cart),
         ),
         BottomNavigationBarItem(
-          title: Text("消息"),
+          title: Text(tabInfoList[3]),
           icon: Icon(Icons.message),
         ),
         BottomNavigationBarItem(
-          title: Text("我的"),
+          title: Text(tabInfoList[4]),
           icon: Icon(Icons.person),
         ),
       ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyBottomBarContainer {
   static List<String> tabInfoList = [
-    "首页",
+    "看图识数",
     "分类",
     "购物车",
     "消息",

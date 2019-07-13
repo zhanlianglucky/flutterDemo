@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/demo/animation/MyAnimation.dart';
 import 'package:flutter_demo/demo/common/MaterialWidget.dart';
 import 'package:flutter_demo/demo/common/MyBottomBar.dart';
 import 'package:flutter_demo/demo/home/HomeContentWidget.dart';
@@ -21,10 +22,11 @@ class HomePageState extends State<HomePageWidget> {
   Widget build(BuildContext context) {
     return MaterialWidget(
       title: MyBottomBarContainer.tabInfoList[_currentPageIndex],
-      body: IndexedStack(//内容切换
+      body: IndexedStack(//内容切换,不重绘
         children: <Widget>[
           HomeContentWidget(),
-          Center(child: Text(MyBottomBarContainer.tabInfoList[1]),),
+//          Center(child: Text(MyBottomBarContainer.tabInfoList[1]),),
+          MyAnimation(),
           Center(child: Text(MyBottomBarContainer.tabInfoList[2]),),
           Center(child: Text(MyBottomBarContainer.tabInfoList[3]),),
           Center(child: Text(MyBottomBarContainer.tabInfoList[4]),),

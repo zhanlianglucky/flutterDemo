@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-///动画
+///动画1  视图控件和动画操作混合在一起
 class MyAnimation extends StatefulWidget {
   @override
   _MyAnimationState createState() => _MyAnimationState();
@@ -16,7 +16,7 @@ class _MyAnimationState extends State<MyAnimation>
     super.initState();
     _animationController =
         AnimationController(duration: Duration(seconds: 3), vsync: this);
-    _animation = Tween(begin: 40.0, end: 200.0).animate(_animationController)
+    _animation = Tween(begin: 40.0, end: 100.0).animate(_animationController)
       ..addListener(() {
         setState(() {
           /////
@@ -33,9 +33,12 @@ class _MyAnimationState extends State<MyAnimation>
         onTap: (){
           if (_animationController.isAnimating){
             _animationController.stop();
-          } else {
+          } else if (_animationController.isDismissed){
+            _animationController.repeat();
+          }else {
             _animationController.repeat();
           }
+          print("${_animationController.status}");
         },
         child: Container(
           decoration: BoxDecoration(

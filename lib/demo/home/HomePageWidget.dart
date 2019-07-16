@@ -12,7 +12,7 @@ class HomePageWidget extends StatefulWidget {
   State<StatefulWidget> createState() => HomePageState();
 }
 
-class HomePageState extends State<HomePageWidget> {
+class HomePageState extends State<HomePageWidget> with SingleTickerProviderStateMixin {
   var _currentPageIndex = 0;
 
   @override
@@ -37,7 +37,7 @@ class HomePageState extends State<HomePageWidget> {
                 Padding(padding: EdgeInsets.symmetric(vertical: 10),),
                 MyAnimation3(),
                 Padding(padding: EdgeInsets.symmetric(vertical: 10),),
-                MyAnimation4(),
+                MyAnimation4(singleTickerProviderStateMixin: this,),
               ],
             ),
           ),

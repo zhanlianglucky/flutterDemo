@@ -49,20 +49,23 @@ class AnimationTransition extends AnimatedWidget {
 
 ///实际操作类
 class MyAnimation4 extends StatefulWidget {
+  final SingleTickerProviderStateMixin singleTickerProviderStateMixin;//控制动画的作用范围
+  MyAnimation4({this.singleTickerProviderStateMixin});
   @override
   _MyAnimation4State createState() => _MyAnimation4State();
 }
 
-class _MyAnimation4State extends State<MyAnimation4>
-    with SingleTickerProviderStateMixin {
+class _MyAnimation4State extends State<MyAnimation4> {
   Animation<double> _animation;
   AnimationController _animationController;
+
+
 
   @override
   void initState() {
     super.initState();
     _animationController =
-        AnimationController(duration: Duration(seconds: 1), vsync: this);
+        AnimationController(duration: Duration(seconds: 1), vsync: widget.singleTickerProviderStateMixin);
     _animation = CurvedAnimation(parent: _animationController, curve: Curves.easeIn);
     _animationController.forward();
     _animation.addStatusListener((status) {

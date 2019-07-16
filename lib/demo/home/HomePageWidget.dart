@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/demo/animation/MyAnimation1.dart';
-import 'package:flutter_demo/demo/animation/MyAnimation3.dart';
-import 'package:flutter_demo/demo/animation/MyAnimation4.dart';
+import 'package:flutter_demo/animation/MyAnimation1.dart';
+import 'package:flutter_demo/animation/MyAnimation3.dart';
+import 'package:flutter_demo/animation/MyAnimation4.dart';
 import 'package:flutter_demo/demo/common/MaterialWidget.dart';
 import 'package:flutter_demo/demo/common/MyBottomBar.dart';
 import 'package:flutter_demo/demo/home/HomeContentWidget.dart';

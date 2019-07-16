@@ -13,7 +13,7 @@ class MyWidget extends StatelessWidget {
         color: Colors.green,
       ),
       child: Text(
-        "独立控件",
+        "组合动画",
         style: TextStyle(
           color: Colors.white,
           fontSize: 16,
@@ -59,8 +59,6 @@ class _MyAnimation4State extends State<MyAnimation4> {
   Animation<double> _animation;
   AnimationController _animationController;
 
-
-
   @override
   void initState() {
     super.initState();
@@ -77,6 +75,9 @@ class _MyAnimation4State extends State<MyAnimation4> {
         }
       });
       print("$status");
+    });
+    _animation.addListener((){
+
     });
   }
 

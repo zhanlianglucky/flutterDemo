@@ -50,6 +50,10 @@ class ListViewState extends State<ListViewWidget> {
               title: new Text(item.title,),
               subtitle: new Text(item.content),
             );
+          } else {
+            return new ListTile(
+              title: new Text("invalid"),
+            );
           }
         });
   }

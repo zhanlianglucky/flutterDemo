@@ -6,7 +6,7 @@
 
 ### 效果图  
 
-  ![image](https://github.com/zhanlianglucky/flutter_demo/tree/master/lib/home_type/img/home_page1.png)     
+  ![image](https://github.com/zhanlianglucky/flutter_demo/blob/master/lib/home_type/img/home_page1.png)     
    
-  ![image](https://github.com/zhanlianglucky/flutter_demo/tree/master/lib/home_type/img/home_page2.png)  
+  ![image](https://github.com/zhanlianglucky/flutter_demo/blob/master/lib/home_type/img/home_page2.png)  
 

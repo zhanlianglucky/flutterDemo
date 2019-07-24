@@ -4,7 +4,7 @@ class MyBottomBarContainer {
   static List<String> tabInfoList = [
     "看图识数",
     "分类",
-    "购物车",
+    "计算",
     "消息",
     "我的",
   ];
@@ -23,7 +23,7 @@ class MyBottomBarContainer {
         ),
         BottomNavigationBarItem(
           title: Text(tabInfoList[2]),
-          icon: Icon(Icons.shopping_cart),
+          icon: Icon(Icons.view_comfy),
         ),
         BottomNavigationBarItem(
           title: Text(tabInfoList[3]),

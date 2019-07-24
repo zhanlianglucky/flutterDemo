@@ -25,4 +25,11 @@ class _FadeAnimationWidgetState extends State<FadeAnimationWidget>
   Widget build(BuildContext context) {
     return FadeTransition(opacity: animationController,child: widget.child,);
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+    animationController?.dispose();
+  }
+
 }

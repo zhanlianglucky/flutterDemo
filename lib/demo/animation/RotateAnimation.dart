@@ -39,4 +39,10 @@ class _RotateAnimationWidgetState extends State<RotateAnimationWidget>
       child: widget.child,
     );
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+    animationController?.dispose();
+  }
 }

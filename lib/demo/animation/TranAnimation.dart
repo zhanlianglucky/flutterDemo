@@ -47,4 +47,10 @@ class _TranAnimationWidgetState extends State<TranAnimationWidget>
           animation: _animation,
         ));
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _animationController?.dispose();
+  }
 }

@@ -37,4 +37,10 @@ class _ScaleAnimationWidgetState extends State<ScaleAnimationWidget>
       child: widget.child,
     );
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+    animationController?.dispose();
+  }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/animation/MyAnimation1.dart';
 import 'package:flutter_demo/animation/MyAnimation3.dart';
 import 'package:flutter_demo/animation/MyAnimation4.dart';
+import 'package:flutter_demo/demo/animation/test/TestTransition.dart';
 import 'package:flutter_demo/demo/calculate/CalculateWidget.dart';
 import 'package:flutter_demo/demo/common/MaterialWidget.dart';
 import 'package:flutter_demo/demo/common/MyBottomBar.dart';
@@ -43,7 +44,7 @@ class HomePageState extends State<HomePageWidget> with SingleTickerProviderState
             ),
           ),
           CalculateWidget(),//第三页
-          Center(child: Text(MyBottomBarContainer.tabInfoList[3]),),
+          Center(child: TestTransitionWidget(),),
           Center(child: Text(MyBottomBarContainer.tabInfoList[4]),),
         ],
         index: _currentPageIndex,

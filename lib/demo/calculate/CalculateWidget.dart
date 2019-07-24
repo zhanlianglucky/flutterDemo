@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/demo/animation/FadeAnimation.dart';
+import 'package:flutter_demo/demo/animation/ScaleAnimation.dart';
+
 
 class CalculateWidget extends StatefulWidget {
   @override
@@ -9,21 +11,30 @@ class CalculateWidget extends StatefulWidget {
 class _CalculateWidgetState extends State<CalculateWidget> {
   @override
   Widget build(BuildContext context) {
-    return FadeAnimationWidget(
-      lowerBound: 0.6,
-      upperBound: 1.0,
-      duration: Duration(seconds: 1),
-      child: Container(
-        alignment: Alignment.center,
-        child: Text(
-          "123",
-          style: TextStyle(
-            fontSize: 36,
-            fontWeight: FontWeight.w900,
-            color: Colors.blue,
+    return Column(
+      children: <Widget>[
+        ScaleAnimationWidget(
+          lowerBound: 0.6,
+          upperBound: 1.0,
+          duration: Duration(seconds: 1),
+          child: FadeAnimationWidget(
+            lowerBound: 0.6,
+            upperBound: 1.0,
+            duration: Duration(seconds: 1),
+            child: Container(
+              alignment: Alignment.center,
+              child: Text(
+                "123",
+                style: TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.blue,
+                ),
+              ),
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
 }

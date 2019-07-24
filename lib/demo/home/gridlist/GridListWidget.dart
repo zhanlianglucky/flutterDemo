@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/demo/animation/TranAnimation.dart';
 import 'package:flutter_demo/demo/home/gridlist/GridListItem.dart';
 
 /// 表格
@@ -17,11 +18,12 @@ class GridListState extends State<GridListWidget> {
         crossAxisCount: 5,
         mainAxisSpacing: 10.0,
         crossAxisSpacing: 10.0,
-
       ),
       itemBuilder: (context, i) {
-        return GridListItem(
-          number: i,
+        return TranAnimationWidget(
+          child: GridListItem(
+            number: i,
+          ),
         );
       },
     );

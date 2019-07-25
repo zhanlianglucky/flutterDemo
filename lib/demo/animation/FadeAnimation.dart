@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///渐变
 class FadeAnimationWidget extends StatefulWidget {
   final Widget child;
   final double lowerBound,upperBound;

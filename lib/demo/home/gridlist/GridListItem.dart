@@ -14,21 +14,21 @@ class GridListItemState extends State<GridListItem> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
-        setState(() {
-          widget.number += 1;
-        });
-      },
-      onTapDown: (d){
-        setState(() {
-          _color = Colors.blue;
-        });
-      },
-      onTapUp: (u){
-        setState(() {
-          _color = Colors.blue[400];
-        });
-      },
+//      onTap: (){
+//        setState(() {
+//          widget.number += 1;
+//        });
+//      },
+//      onTapDown: (d){
+//        setState(() {
+//          _color = Colors.blue;
+//        });
+//      },
+//      onTapUp: (u){
+//        setState(() {
+//          _color = Colors.blue[400];
+//        });
+//      },
       child: Container(
         width: 50,
         height: 50,

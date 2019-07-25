@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// 缩放
 class ScaleAnimationWidget extends StatefulWidget {
   final Widget child;
   final double lowerBound, upperBound;

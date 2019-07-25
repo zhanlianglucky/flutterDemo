@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+
+///旋转
 class RotateAnimationWidget extends StatefulWidget {
   final Widget child;
   final double lowerBound, upperBound;

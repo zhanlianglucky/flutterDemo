@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/demo/animation/AnimationTransition.dart';
 
+///移动
 class TranAnimationWidget extends StatefulWidget {
   final Widget child;
   TranAnimationWidget({this.child});

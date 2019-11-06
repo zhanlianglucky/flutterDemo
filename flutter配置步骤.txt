@@ -1,0 +1,8 @@
+flutter配置步骤（要有梯子）
+1.Android studio 安装flutter插件。
+2.下载flutter sdk。
+3.下载dart sdk。
+4.在Android studio 中配置 flutter sdk路径。
+5.在Android studio 中配置 dart sdk路径。
+6.添加系统环境变量（flutter-sdk/bin; dart-sdk/bin）。
+7.重新编译项目，自动下载依赖库！  Over！！！
